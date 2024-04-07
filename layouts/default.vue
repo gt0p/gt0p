@@ -18,15 +18,15 @@ onMounted(() => {
 
 <template>
   <v-app>
-    <v-app-bar class="px-3" color="background" fixed app elevate-on-scroll>
-      <v-toolbar class="page-container" color="background">
-        <v-toolbar-title class="ml-0 logo text-h6 text-md-h5 text-wrap">
-          <nuxt-link to="/"> {{ title }} </nuxt-link>
-        </v-toolbar-title>
-
-        <v-spacer></v-spacer>
-
-        <v-toolbar-items class="d-flex align-center">
+    <v-app-bar
+      class="px-3"
+      color="background"
+      fixed
+      app
+      scroll-behavior="elevate"
+    >
+      <v-toolbar class="d-flex flex-row justify-center" color="background">
+        <v-toolbar-items class="d-flex align-center justify-center mx-auto">
           <nav class="mr-0" role="navigation" aria-label="Primary">
             <v-list
               class="nav d-inline-flex flex-row justify-end"
@@ -34,10 +34,17 @@ onMounted(() => {
               align="center"
             >
               <v-list-item class="nav-item mb-0">
-                <nuxt-link to="/" class="text-subtitle-1 text-secondary"
+                <nuxt-link
+                  :to="{ name: 'index' }"
+                  class="text-subtitle-1 text-secondary"
                   >Projects</nuxt-link
                 >
               </v-list-item>
+
+              <v-list-item class="logo mx-2 text-h6 text-md-h5 text-wrap">
+                <nuxt-link :to="{ name: 'index' }"> {{ title }} </nuxt-link>
+              </v-list-item>
+
               <v-list-item class="nav-item mb-0 ml-1">
                 <nuxt-link
                   :to="{ name: 'about' }"
@@ -67,7 +74,8 @@ onMounted(() => {
 
 <style scoped>
 .logo {
-  min-width: 170px;
+  min-width: 0px;
+  width: 200px !important;
 }
 
 .logo a {

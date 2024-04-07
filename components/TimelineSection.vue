@@ -43,9 +43,12 @@ const timelineItems = computed(() => {
 });
 
 function getDatePeriod({ start, end }: { start: string; end: string }) {
-  const startDate = dayjs(start).format("MMM YYYY");
-  const endDate = dayjs(end).format("MMM YYYY");
-  const monthsDiff = Math.round(dayjs(end).diff(dayjs(start), "month", true));
+  const s = dayjs(start);
+  const e = dayjs(end === "" ? new Date() : end);
+
+  const startFormattedDate = s.format("MMM YYYY");
+  const endFormattedDate = e.format("MMM YYYY");
+  const monthsDiff = Math.round(e.diff(s, "month", true));
 
   const numYears = Math.floor(monthsDiff / 12);
   const numMonths = monthsDiff % 12;
@@ -63,7 +66,7 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
     datePeriodDuration = `${numYears}${yearsDurationText}`;
   }
 
-  return `${startDate} - ${endDate}   (${datePeriodDuration})`;
+  return `${startFormattedDate} - ${endFormattedDate}   (${datePeriodDuration})`;
 }
 </script>
 

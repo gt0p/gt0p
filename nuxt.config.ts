@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
-      titleTemplate: "%s",
+      titleTemplate: "%s - Giorgos Topsis",
       htmlAttrs: {
         lang: "en",
       },

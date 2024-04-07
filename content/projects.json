@@ -37,7 +37,7 @@
   },
   {
     "src": "/images/website-uoc-radio-showcase.webp",
-    "title": "Website for radio station RASTAPANK",
+    "title": "Demo Website for radio station RASTAPANK",
     "imageDescription": "A browser window which contains a part of the website for the FM radio of University of Crete. This part is the logo, the navigation menu, a background image and an one-line music player.",
     "description": "A responsive and usable website (showcase - not the current one) of RASTAPANK, the team behind the FM radio station of university of Crete.",
     "demo": "https://gtopsis.github.io/Uoc-radio-website/index.html",

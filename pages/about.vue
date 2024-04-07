@@ -8,7 +8,7 @@ useHead({
       hid: "description",
       name: "description",
       content:
-        "About me page contains details about my personal hobbies, projects and goals.",
+        "Contains details about my personal hobbies, projects and goals.",
     },
   ],
 });

@@ -37,8 +37,9 @@ onMounted(() => {
                 <nuxt-link
                   :to="{ name: 'index' }"
                   class="text-subtitle-1 text-secondary"
-                  >Projects</nuxt-link
                 >
+                  Projects
+                </nuxt-link>
               </v-list-item>
 
               <v-list-item class="logo mx-2 text-h6 text-md-h5 text-wrap">
@@ -49,8 +50,9 @@ onMounted(() => {
                 <nuxt-link
                   :to="{ name: 'about' }"
                   class="text-subtitle-1 text-secondary"
-                  >About</nuxt-link
                 >
+                  About
+                </nuxt-link>
               </v-list-item>
             </v-list>
           </nav>

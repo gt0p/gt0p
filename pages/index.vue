@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 useHead({
-  title: "Home",
+  title: "Projects",
   meta: [
     // hid is used as unique identifier. Do not use `vmid` for it as it will not work
     {
       hid: "description",
       name: "description",
       content:
-        "Home page of my personal website. It contains details about my participation on activities and several personal projects and .",
+        "Contains details about my participation on activities and several personal projects.",
     },
   ],
 });

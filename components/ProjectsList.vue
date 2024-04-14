@@ -32,7 +32,7 @@ function navigateToProjectAsset(url: string) {
             sizes="xs:400px sm:450px md:350px lg:350px xl:400px"
           >
           </nuxt-picture>
-          
+
           <v-card-title :title="project.title">
             <strong> {{ project.title }} </strong>
           </v-card-title>
@@ -70,6 +70,15 @@ function navigateToProjectAsset(url: string) {
             </v-btn>
           </v-card-actions>
         </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12" class="text-center">
+        <h6>
+          Tool used for app previews/mockups is
+          <a href="https://www.shots.so/">Shots</a> ❤️
+        </h6>
       </v-col>
     </v-row>
   </v-container>

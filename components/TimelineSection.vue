@@ -1,14 +1,7 @@
 <script setup lang="ts">
-// import { useDisplay } from "vuetify";
 import dayjs from "dayjs";
 import { useStudiesStore } from "~~/stores/education.js";
 import { useJobsStore } from "~~/stores/experience.js";
-
-// const { mobile } = useDisplay();
-const timelineDirection = computed(
-  () => "vertical"
-  // mobile.value ? "vertical" : "horizontal",
-);
 
 const avatarSize = 44;
 const props = defineProps({
@@ -54,8 +47,9 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
   const numMonths = monthsDiff % 12;
 
   const monthsDurationText =
-    numMonths === 0 ? "" : numMonths === 1 ? "mo" : "mos";
-  const yearsDurationText = numYears === 0 ? "" : numYears === 1 ? "yr" : "yrs";
+    numMonths === 0 ? "" : numMonths === 1 ? " mo" : " mos";
+  const yearsDurationText =
+    numYears === 0 ? "" : numYears === 1 ? " yr" : " yrs";
 
   let datePeriodDuration = "";
   if (monthsDurationText && yearsDurationText) {
@@ -82,7 +76,7 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
       <v-col cols="12" class="px-0">
         <v-timeline
           align="center"
-          :direction="timelineDirection"
+          direction="vertical"
           side="end"
           :truncate-line="truncateLines"
         >

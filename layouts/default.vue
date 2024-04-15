@@ -33,7 +33,7 @@ onMounted(() => {
               nav
               align="center"
             >
-              <v-list-item class="nav-item mb-0">
+              <v-list-item class="nav-item mb-0" role="option">
                 <nuxt-link
                   :to="{ name: 'index' }"
                   class="text-subtitle-1 text-secondary"
@@ -42,11 +42,14 @@ onMounted(() => {
                 </nuxt-link>
               </v-list-item>
 
-              <v-list-item class="logo mx-2 text-h6 text-md-h5 text-wrap">
+              <v-list-item
+                class="logo mx-2 text-h6 text-md-h5 text-wrap"
+                role="option"
+              >
                 <nuxt-link :to="{ name: 'index' }"> {{ title }} </nuxt-link>
               </v-list-item>
 
-              <v-list-item class="nav-item mb-0 ml-1">
+              <v-list-item class="nav-item mb-0 ml-1" role="option">
                 <nuxt-link
                   :to="{ name: 'about' }"
                   class="text-subtitle-1 text-secondary"

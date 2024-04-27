@@ -59,6 +59,16 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
               >
                 {{ paragraph }}
               </p>
+
+              <h4 class="mt-8 text-left">
+                A look at my tech stack:
+                <a
+                  href="https://stackshare.io/gforerasmus/my-stack#stack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >My page on StackShare</a
+                >
+              </h4>
             </v-col>
           </v-row>
         </v-container>

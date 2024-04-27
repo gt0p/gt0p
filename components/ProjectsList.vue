@@ -75,10 +75,10 @@ function navigateToProjectAsset(url: string) {
 
     <v-row>
       <v-col cols="12" class="text-center">
-        <h6>
+        <h5>
           Tool used for app previews/mockups is
-          <a href="https://www.shots.so/">Shots</a> ❤️
-        </h6>
+          <a href="https://www.shots.so/" target="_blank">Shots</a> ❤️
+        </h5>
       </v-col>
     </v-row>
   </v-container>

@@ -5,6 +5,9 @@ import type { Project } from "~/models";
 const title = "Personal Projects";
 const { projectsList } = storeToRefs(useProjectsStore());
 const projects = projectsList.value as Project[];
+const visibleProjects = computed(() => {
+  return projects.filter((project) => project.visible !== false);
+});
 
 function navigateToProjectAsset(url: string) {
   window.open(url, "_blank");
@@ -20,7 +23,12 @@ function navigateToProjectAsset(url: string) {
     </v-row>
 
     <v-row dense>
-      <v-col v-for="project in projects" :key="project.title" cols="12" md="4">
+      <v-col
+        v-for="project in visibleProjects"
+        :key="project.title"
+        cols="12"
+        md="4"
+      >
         <v-card class="mx-auto mb-3" max-width="400">
           <nuxt-picture
             :img-attrs="{ style: 'display:block; width:100%' }"

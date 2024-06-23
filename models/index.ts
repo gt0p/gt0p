@@ -6,6 +6,7 @@ export interface Project {
   demo: string;
   code: string;
   buildingTools: string[];
+  visible?: boolean;
 }
 
 export interface Meetup {

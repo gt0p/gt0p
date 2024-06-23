@@ -1,12 +1,21 @@
 [
+  {
+    "src": "/images/pirate-thief-showcase.webp",
+    "imageDescription": "A browser window which contains the home page of the app. This part is a list of job ads and their details, as well as several tools (filters etc.) to support their management.",
+    "title": "Pirate Thief app",
+    "description": "A web app to showcase, in a more intuitive way, the list of jobs that are available from Startup-Pirate guy.",
+    "demo": "https://gtopsis.github.io/pirate-thief/",
+    "code": "https://github.com/gtopsis/pirate-thief",
+    "buildingTools": ["TypeScript", "Nuxt.js","Vue.js", "Vite", "Tailwind CSS"]
+  },
     {
     "src": "/images/brokery-showcase.webp",
-    "imageDescription": "A browser window which contains the home page of the app. This part is a list of real estate assets with pictures and details, as well as several tools (filters etc.) to support their management",
+    "imageDescription": "A browser window which contains the home page of the app. This part is a list of real estate assets with pictures and details, as well as several tools (filters etc.) to support their management.",
     "title": "Brokery app",
     "description": "A web app to support real estate agents and brokers to manage their portfolios of property assets.",
     "demo": "https://brokery.pages.dev/property-listing",
     "code": "",
-    "buildingTools": ["Nuxt.js","Vue.js", "Vite", "Vuetify", "Pinia"]
+    "buildingTools": ["TypeScript", "Nuxt.js","Vue.js", "Vite", "Vuetify", "Pinia"]
   },
   {
     "src": "/images/pagni-health-exams-aggregator-showcase.webp",
@@ -15,7 +24,7 @@
     "description": "Desktop app which aims to support patients to track the progress of their blood tests' data across time in an intuitive and usable way.",
     "demo": "",
     "code": "https://github.com/gtopsis/PAGNI-health-exams-aggregator",
-    "buildingTools": ["Electron", "Vue.js", "Vite", "Vuetify"]
+    "buildingTools": ["TypeScript", "Electron", "Vue.js", "Vite", "Vuetify"]
   },
   {
     "src": "/images/website-cs352-showcase.webp",
@@ -24,7 +33,7 @@
     "description": "Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It was serving the content (lectures, tutorials, assignments and course project) of the course to the students.",
     "demo": "https://gtopsis.github.io/Course-cs352-website/",
     "code": "https://github.com/gtopsis/Course-cs352-website",
-    "buildingTools": ["Bootstrap"]
+    "buildingTools": ["JavaScript", "Bootstrap"]
   },
   {
     "src": "/images/loan-calculator-showcase.webp",
@@ -33,7 +42,8 @@
     "description": "A simple calculator for the monthly payment of a loan, based on the payment-in-advance and its duration.",
     "demo": "https://gtopsis.github.io/loan-calculator/",
     "code": "https://github.com/gtopsis/loan-calculator",
-    "buildingTools": ["Vue.js", "Bootstrap"]
+    "buildingTools": ["Vue.js", "Bootstrap"],
+    "visible": false
   },
   {
     "src": "/images/music-app-api-showcase.webp",

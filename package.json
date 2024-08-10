@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
@@ -24,6 +25,7 @@
     "dayjs": "^1.11.12",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "sass": "^1.77.8"
   },

@@ -26,13 +26,7 @@
       "end": ""
     },
     "description": "",
-    "tools": [
-      "TypeScript",
-      "Vue.js",
-      "Nuxt",
-      "Vitest",
-      "Taileind CSS"
-    ],
+    "tools": ["TypeScript", "Vue.js", "Nuxt", "Vitest", "Taileind CSS"],
     "readMore": ""
   },
   {

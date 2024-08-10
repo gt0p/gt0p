@@ -40,7 +40,7 @@ const skills = skillsList.value;
               <ul class="ma-0 pa-0 tech-list text-center">
                 <li v-for="(tech, j) in skill.technologies" :key="j">
                   <span v-if="tech.desc == ''"> {{ tech.title }} </span>
-                  
+
                   <v-tooltip
                     v-else
                     top

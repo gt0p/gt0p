@@ -22,7 +22,7 @@ describe("HeroSection", () => {
     expect(wrapper.vm).toBeTruthy();
     expect(element.isVisible()).toBe(true);
     expect(element.text()).toBe(
-      "a Full-Stack Web Developer based in Heraklion of Crete."
+      "a Full-Stack Web Developer based in Heraklion of Crete.",
     );
   });
 });

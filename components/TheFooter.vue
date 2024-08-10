@@ -40,7 +40,7 @@ const footerText = "Giorgos Topsis 2022";
           </v-col>
         </v-row>
       </v-col>
-      
+
       <v-col cols="12" class="py-1">
         <p class="text-center ma-0">{{ personalMessage }}</p>
         <p class="text-center ma-0">&copy; {{ footerText }}</p>

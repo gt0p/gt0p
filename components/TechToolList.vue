@@ -21,6 +21,7 @@ const sortedList = computed(() => {
             fit="fill"
             width="28"
             height="28"
+            :alt="`Logo of tool ${getTool(toolId)?.name}`"
           />
         </template>
 

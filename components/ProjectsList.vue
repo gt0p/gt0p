@@ -17,9 +17,21 @@ function navigateToProjectAsset(url: string) {
 
 <template>
   <v-container class="pa-0" fluid full-width>
-    <v-row align="center" class="justify-md-center justify-sm-left">
-      <v-col cols="auto" class="mb-8">
-        <h1>{{ title }}</h1>
+    <v-row class="align-center justify-md-center justify-sm-left">
+      <v-col cols="12" class="mb-2">
+        <h1 class="text-center">{{ title }}</h1>
+      </v-col>
+
+      <v-col class="mb-8 text-center">
+        <h4>
+          <a
+            href="http://github.com/gtopsis"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+            >See all projects</a
+          >
+        </h4>
       </v-col>
     </v-row>
 
@@ -78,10 +90,16 @@ function navigateToProjectAsset(url: string) {
 
     <v-row>
       <v-col cols="12" class="text-center">
-        <h5>
+        <h4>
           Tool used for app previews/mockups is
-          <a href="https://www.shots.so/" target="_blank">Shots</a> ❤️
-        </h5>
+          <a
+            href="https://www.shots.so/"
+            target="_blank"
+            class="text-decoration-none"
+            >Shots</a
+          >
+          ❤️
+        </h4>
       </v-col>
     </v-row>
   </v-container>

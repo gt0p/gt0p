@@ -1,11 +1,7 @@
 import toolsDescriptions from "@/content/tools-descriptions.json";
+import type { ITool } from "~/types/interfaces";
 
-export interface Tool {
-  name?: string;
-  definition: string;
-  icon?: string;
-}
-const tools: Record<string, Tool> = toolsDescriptions;
+const tools: Record<string, ITool> = toolsDescriptions;
 
 const getToolDescription = (toolName: string) =>
   tools[toolName].definition || "";

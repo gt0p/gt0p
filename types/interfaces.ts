@@ -1,4 +1,4 @@
-export interface Project {
+export interface IProject {
   src: string;
   imageDescription: string;
   title: string;
@@ -9,23 +9,29 @@ export interface Project {
   visible?: boolean;
 }
 
-export interface Meetup {
+export interface IMeetup {
   src: string;
   title: string;
   link: string;
   description: string;
 }
 
-interface Technology {
+interface ITechnology {
   desc: string;
   key: string;
   title: string;
 }
 
-export interface Skill {
+export interface ISkill {
   icon: string;
   title: string;
   desc: string;
   heading: string;
-  technologies: Technology[];
+  technologies: ITechnology[];
+}
+
+export interface ITool {
+  name?: string;
+  definition: string;
+  icon?: string;
 }

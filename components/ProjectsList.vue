@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import type { IProject } from "~/types/interfaces";
 import { useProjectsStore } from "../stores/projects";
-import type { Project } from "~/models";
 import TechToolList from "./TechToolList.vue";
 
 const title = "Personal Projects";
 const { projectsList } = storeToRefs(useProjectsStore());
-const projects = projectsList.value as Project[];
+const projects = projectsList.value as IProject[];
 const visibleProjects = computed(() => {
   return projects.filter((project) => project.visible !== false);
 });

@@ -1,8 +1,8 @@
-import type { Skill } from "~/models";
+import type { ISkill } from "~/types/interfaces";
 import { getToolDescription } from "~~/utils/tootls-descriptions";
 
 export const useSkillsStore = defineStore("SkillsStore", () => {
-  const skills: Skill[] = reactive([
+  const skills: ISkill[] = reactive([
     {
       icon: "laptop-code",
       title: "Front End Developer",
@@ -117,6 +117,6 @@ export const useSkillsStore = defineStore("SkillsStore", () => {
   return { skillsList };
 });
 
-if (import.meta.hot) {
+if(import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useSkillsStore, import.meta.hot));
 }

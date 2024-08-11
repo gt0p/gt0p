@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import type { IMeetup } from "~/types/interfaces";
 import { useMeetupsStore } from "../stores/meetups";
-import type { Meetup } from "~/models";
 
 const title = "Participation on several Meetups";
 
 const { meetupsList } = storeToRefs(useMeetupsStore());
-const meetups = meetupsList.value as Meetup[];
+const meetups = meetupsList.value as IMeetup[];
 
 function navigateToMeetup(url: string) {
   window.open(url, "_blank");

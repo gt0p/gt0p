@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { Tool } from "~/utils/tootls-descriptions";
+import type { ITool } from "~/utils/tootls-descriptions";
 
 const props = defineProps<{
-  tool: Tool;
+  tool: ITool;
 }>();
 
 const iconSizePx = 28;

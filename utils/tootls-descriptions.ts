@@ -1,6 +1,6 @@
 import toolsDescriptions from "@/content/tools-descriptions.json";
 
-interface Tool {
+export interface Tool {
   name?: string;
   definition: string;
   icon?: string;

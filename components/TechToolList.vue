@@ -13,20 +13,7 @@ const sortedList = computed(() => {
 <template>
   <ul class="tool-list d-flex justify-center width-100">
     <li v-for="toolId in sortedList" :key="toolId" class="mr-2 shrink">
-      <v-tooltip location="top" small aria-labelledby="skillTooltipText">
-        <template #activator="{ props: tooltipProps }">
-          <NuxtImg
-            v-bind="tooltipProps"
-            :src="`/tech_logos/${getTool(toolId)?.icon}`"
-            fit="fill"
-            width="28"
-            height="28"
-            :alt="`Logo of tool ${getTool(toolId)?.name}`"
-          />
-        </template>
-
-        <span> {{ getTool(toolId)?.name }} </span>
-      </v-tooltip>
+      <TechToolListItem :tool="getTool(toolId)" />
     </li>
   </ul>
 </template>

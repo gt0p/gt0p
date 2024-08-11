@@ -6,37 +6,37 @@
   },
   "nuxtjs": {
     "name": "Nuxt.js",
-    "definition": "",
+    "definition": "Nuxt is an open source framework that makes web development intuitive and powerful. Create performant and production-grade full-stack web apps and websites with confidence.",
     "icon": "nuxt-js.svg"
   },
   "javascript": {
     "name": "JavaScript",
-    "definition": "",
+    "definition": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification.",
     "icon": "javascript.svg"
   },
   "typescript": {
     "name": "TypeScript",
-    "definition": "",
+    "definition": "TypeScript is a statically typed superset of JavaScript that adds optional static typing and other features to the language.",
     "icon": "typescript.svg"
   },
   "vite": {
     "name": "Vite",
-    "definition": "",
+    "definition": "Vite is a modern web development build tool that provides a faster and more efficient way to build and serve web applications.",
     "icon": "vite-js.svg"
   },
   "tailwindCSS": {
     "name": "Tailwind CSS",
-    "definition": "",
+    "definition": "Tailwind CSS is a utility-first CSS framework that allows developers to write more concise and maintainable CSS code.",
     "icon": "tailwind-CSS.svg"
   },
   "electron": {
     "name": "Electron",
-    "definition": "",
+    "definition": "Electron JS is a framework for building cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript.",
     "icon": "electron.svg"
   },
   "pinia": {
     "name": "Pinia",
-    "definition": "",
+    "definition": "Pinia is a state management library for Vue.js applications.",
     "icon": "pinia.svg"
   },
   "vuex": {

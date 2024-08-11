@@ -62,8 +62,8 @@ function navigateToProjectAsset(url: string) {
             <p class="project-description">{{ project.description }}</p>
 
             <TechToolList
-              v-if="project.buildingTools.length"
-              :tools="project.buildingTools"
+              v-if="project.buildingToolsIds.length"
+              :tools="project.buildingToolsIds"
             />
           </v-card-text>
 
@@ -108,11 +108,5 @@ function navigateToProjectAsset(url: string) {
 <style scoped>
 .project-description {
   min-height: 105px;
-}
-
-.project-building-tools li {
-  /* display: inline-block; */
-  padding: 0;
-  margin-left: 16px;
 }
 </style>

@@ -5,7 +5,7 @@ export interface Project {
   description: string;
   demo: string;
   code: string;
-  buildingTools: string[];
+  buildingToolsIds: string[];
   visible?: boolean;
 }
 

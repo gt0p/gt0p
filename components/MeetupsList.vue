@@ -6,10 +6,6 @@ const title = "Participation on several Meetups";
 
 const { meetupsList } = storeToRefs(useMeetupsStore());
 const meetups = meetupsList.value as IMeetup[];
-
-function navigateToMeetup(url: string) {
-  window.open(url, "_blank");
-}
 </script>
 
 <template>
@@ -21,26 +17,8 @@ function navigateToMeetup(url: string) {
     </v-row>
 
     <v-row dense justify="center">
-      <v-col v-for="(meetup, index) in meetups" :key="index" cols="12" md="4">
-        <v-card
-          class="meetup-card mx-auto mb-3"
-          max-width="400"
-          @click="navigateToMeetup(meetup.link)"
-        >
-          <nuxt-picture
-            :img-attrs="{ style: 'display:block; width:100%' }"
-            :src="meetup.src"
-            :alt="meetup.description"
-            placeholder
-            fit="cover"
-            loading="lazy"
-            sizes="xs:400px sm:450px md:350px lg:350px xl:400px"
-          />
-
-          <v-card-title>
-            <strong :title="meetup.title">{{ meetup.title }}</strong>
-          </v-card-title>
-        </v-card>
+      <v-col v-for="meetup in meetups" :key="meetup.title" cols="12">
+        <MeetupListItem :meetup="meetup" />
       </v-col>
     </v-row>
   </v-container>

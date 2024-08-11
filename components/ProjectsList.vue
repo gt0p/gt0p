@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useProjectsStore } from "../stores/projects";
 import type { Project } from "~/models";
+import TechToolList from "./TechToolList.vue";
 
 const title = "Personal Projects";
 const { projectsList } = storeToRefs(useProjectsStore());
@@ -47,17 +48,11 @@ function navigateToProjectAsset(url: string) {
 
           <v-card-text>
             <p class="project-description">{{ project.description }}</p>
-            <ul
+
+            <TechToolList
               v-if="project.buildingTools.length"
-              class="project-building-tools"
-            >
-              <li
-                v-for="(buildingTool, index) in project.buildingTools"
-                :key="index"
-              >
-                {{ buildingTool }}
-              </li>
-            </ul>
+              :tools="project.buildingTools"
+            />
           </v-card-text>
 
           <v-card-actions>

@@ -6,7 +6,7 @@
     "description": "A web app to showcase, in a more intuitive way, the list of jobs that are available from Startup-Pirate guy.",
     "demo": "https://gtopsis.github.io/pirate-thief/",
     "code": "https://github.com/gtopsis/pirate-thief",
-    "buildingTools": ["TypeScript", "Nuxt.js", "Vue.js", "Vite", "Tailwind CSS"]
+    "buildingTools": ["typescript", "nuxtjs", "vuejs", "vite", "tailwindCSS"]
   },
   {
     "src": "/images/brokery-showcase.webp",
@@ -16,12 +16,12 @@
     "demo": "https://brokery.pages.dev/property-listing",
     "code": "",
     "buildingTools": [
-      "TypeScript",
-      "Nuxt.js",
-      "Vue.js",
-      "Vite",
-      "Vuetify",
-      "Pinia"
+      "typescript",
+      "nuxtjs",
+      "vuejs",
+      "vite",
+      "vuetify",
+      "pinia"
     ]
   },
   {
@@ -31,7 +31,7 @@
     "description": "Desktop app which aims to support patients to track the progress of their blood tests' data across time in an intuitive and usable way.",
     "demo": "",
     "code": "https://github.com/gtopsis/PAGNI-health-exams-aggregator",
-    "buildingTools": ["TypeScript", "Electron", "Vue.js", "Vite", "Vuetify"]
+    "buildingTools": ["typescript", "electron", "vuejs", "vite", "vuetify"]
   },
   {
     "src": "/images/website-cs352-showcase.webp",
@@ -40,7 +40,7 @@
     "description": "Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It was serving the content (lectures, tutorials, assignments and course project) of the course to the students.",
     "demo": "https://gtopsis.github.io/Course-cs352-website/",
     "code": "https://github.com/gtopsis/Course-cs352-website",
-    "buildingTools": ["JavaScript", "Bootstrap"]
+    "buildingTools": ["javascript", "bootstrap"]
   },
   {
     "src": "/images/loan-calculator-showcase.webp",
@@ -49,7 +49,7 @@
     "description": "A simple calculator for the monthly payment of a loan, based on the payment-in-advance and its duration.",
     "demo": "https://gtopsis.github.io/loan-calculator/",
     "code": "https://github.com/gtopsis/loan-calculator",
-    "buildingTools": ["Vue.js", "Bootstrap"],
+    "buildingTools": ["vuejs", "bootstrap"],
     "visible": false
   },
   {
@@ -59,7 +59,7 @@
     "description": "The backend side of a music app in which albums, artists and tracks are associated properly.",
     "demo": "",
     "code": "https://github.com/gtopsis/music-app",
-    "buildingTools": ["OpenAPI 3", "Vue.js", "Bootstrap"]
+    "buildingTools": ["openapi", "vuejs", "bootstrap"]
   },
   {
     "src": "/images/website-uoc-radio-showcase.webp",
@@ -68,6 +68,7 @@
     "description": "A responsive and usable website (showcase - not the current one) of RASTAPANK, the team behind the FM radio station of university of Crete.",
     "demo": "https://gtopsis.github.io/Uoc-radio-website/index.html",
     "code": "https://github.com/gtopsis/Uoc-radio-website",
-    "buildingTools": ["Bootstrap", "JavaScript"]
+    "buildingTools": ["bootstrap", "javascript"],
+    "visible": false
   }
 ]

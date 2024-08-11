@@ -1,53 +1,109 @@
 {
   "vuejs": {
-    "definition": "Vue.js is an open-source model-view-viewmodel front end JavaScript framework for building user interfaces and single-page applications."
+    "name": "Vue.js",
+    "definition": "Vue.js is an open-source model-view-viewmodel front end JavaScript framework for building user interfaces and single-page applications.",
+    "icon": "vue-js.svg"
+  },
+  "nuxtjs": {
+    "name": "Nuxt.js",
+    "definition": "",
+    "icon": "nuxt-js.svg"
+  },
+  "javascript": {
+    "name": "JavaScript",
+    "definition": "",
+    "icon": "javascript.svg"
+  },
+  "typescript": {
+    "name": "TypeScript",
+    "definition": "",
+    "icon": "typescript.svg"
+  },
+  "vite": {
+    "name": "Vite",
+    "definition": "",
+    "icon": "vite-js.svg"
+  },
+  "tailwindCSS": {
+    "name": "Tailwind CSS",
+    "definition": "",
+    "icon": "tailwind-CSS.svg"
+  },
+  "electron": {
+    "name": "Electron",
+    "definition": "",
+    "icon": "electron.svg"
+  },
+  "pinia": {
+    "name": "Pinia",
+    "definition": "",
+    "icon": "pinia.svg"
   },
   "vuex": {
+    "name": "Vuex",
     "definition": "Vuex is a state management pattern + library for Vue.js applications."
   },
   "mongoDB": {
+    "name": "MongoDB",
     "definition": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need."
   },
   "jest": {
+    "name": "Jest",
     "definition": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity."
   },
   "supertest": {
+    "name": "supertest",
     "definition": "Super-agent driven library for testing node.js HTTP servers using a fluent API."
   },
   "vuetify": {
-    "definition": "Vuetify is a Material Design component framework for Vue.js."
+    "name": "Vuetify",
+    "definition": "Vuetify is a Material Design component framework for Vue.js.",
+    "icon": "vuetify.svg"
   },
   "nodejs": {
+    "name": "Node.js",
     "definition": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser."
   },
   "socketio": {
+    "name": "Socket.IO",
     "definition": "Socket.IO is a library that enables real-time, bidirectional and event-based communication between the browser and the server."
   },
   "express": {
+    "name": "Express",
     "definition": "Fast, unopinionated, minimalist web framework for node."
   },
   "angularjs": {
+    "name": "AngularJS",
     "definition": "AngularJS is a JavaScript-based open-source front-end web framework for developing single-page applications."
   },
   "foundationsites": {
+    "name": "Foundation for Sites",
     "definition": "Foundation is a responsive front-end framework."
   },
   "bootstrap": {
-    "definition": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development."
+    "name": "Bootstrap",
+    "definition": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
+    "icon": "bootstrap.svg"
   },
   "openapi": {
-    "definition": "The OpenAPI Specification defines a standard interface to RESTful APIs which allows both humans and computers to understand service capabilities without access to source code, documentation, or network traffic inspection."
+    "name": "OpenAPI 3",
+    "definition": "The OpenAPI Specification defines a standard interface to RESTful APIs which allows both humans and computers to understand service capabilities without access to source code, documentation, or network traffic inspection.",
+    "icon": "openapi.svg"
   },
   "invision": {
+    "name": "InVision",
     "definition": "InVision is the digital product design platform used to make the world's best customer experiences."
   },
   "presentator": {
+    "name": "Presentator",
     "definition": "Design presentation and collaboration platform."
   },
   "heuristicevaluation": {
+    "name": "Heuristic Evaluation",
     "definition": "Heuristic evaluation is a process where experts use rules of thumb to measure the usability of user interfaces in independent walkthroughs and report issues."
   },
   "userCentredDesign": {
+    "name": "User-Centered Design",
     "definition": "User-centered design (UCD) is an iterative design process in which designers focus on the users and their needs in each phase of the design process."
   }
 }

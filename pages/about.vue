@@ -66,6 +66,7 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
                   href="https://stackshare.io/gforerasmus/my-stack#stack"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="text-secondary"
                   >My page on StackShare</a
                 >
               </h4>

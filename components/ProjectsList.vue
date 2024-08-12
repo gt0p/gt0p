@@ -28,7 +28,7 @@ function navigateToProjectAsset(url: string) {
             href="http://github.com/gtopsis"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-decoration-none"
+            class="text-secondary"
             >See all projects</a
           >
         </h4>
@@ -92,10 +92,7 @@ function navigateToProjectAsset(url: string) {
       <v-col cols="12" class="text-center">
         <h4>
           Tool used for app previews/mockups is
-          <a
-            href="https://www.shots.so/"
-            target="_blank"
-            class="text-decoration-none"
+          <a href="https://www.shots.so/" target="_blank" class="text-secondary"
             >Shots</a
           >
           ❤️

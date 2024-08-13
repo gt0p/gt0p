@@ -59,7 +59,7 @@
     "description": "The backend side of a music app in which albums, artists and tracks are associated properly.",
     "demo": "",
     "code": "https://github.com/gtopsis/music-app",
-    "buildingToolsIds": ["openapi", "vuejs", "bootstrap"]
+    "buildingToolsIds": ["openapi", "nodejs", "express", "postgresql", "typescript"]
   },
   {
     "src": "/images/website-uoc-radio-showcase.webp",

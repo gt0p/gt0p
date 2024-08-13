@@ -47,6 +47,11 @@
     "name": "MongoDB",
     "definition": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need."
   },
+  "postgresql": {
+    "name": "PostgreSQL",
+    "definition": "PostgreSQL is an open-source relational database management system (RDBMS) developed by the PostgreSQL Global Development Group.",
+    "icon": "postgreSQL.svg"
+  },
   "jest": {
     "name": "Jest",
     "definition": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity."
@@ -62,7 +67,8 @@
   },
   "nodejs": {
     "name": "Node.js",
-    "definition": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser."
+    "definition": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
+    "icon": "node-js.svg"
   },
   "socketio": {
     "name": "Socket.IO",
@@ -70,7 +76,8 @@
   },
   "express": {
     "name": "Express",
-    "definition": "Fast, unopinionated, minimalist web framework for node."
+    "definition": "Fast, unopinionated, minimalist web framework for node.",
+    "icon": "express.svg"
   },
   "angularjs": {
     "name": "AngularJS",

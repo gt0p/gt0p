@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import type { IMeetup } from "~/types/interfaces";
 import { useMeetupsStore } from "../stores/meetups";
 
 const title = "Participation on several Meetups";
 
 const { meetupsList } = storeToRefs(useMeetupsStore());
-const meetups = meetupsList.value as IMeetup[];
 </script>
 
 <template>
@@ -17,7 +15,7 @@ const meetups = meetupsList.value as IMeetup[];
     </v-row>
 
     <v-row dense justify="center">
-      <v-col v-for="meetup in meetups" :key="meetup.title" cols="12">
+      <v-col v-for="meetup in meetupsList" :key="meetup.title" cols="12">
         <MeetupListItem :meetup="meetup" />
       </v-col>
     </v-row>

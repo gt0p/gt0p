@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ITool } from "~/utils/tootls-descriptions";
+import type { ITool } from "~/types/interfaces";
 
 const props = defineProps<{
   tool: ITool;

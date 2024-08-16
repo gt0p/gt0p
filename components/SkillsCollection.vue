@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import { useSkillsStore } from "../stores/skills";
+
 const title = "Technical Skills";
 
 const { skillsList } = storeToRefs(useSkillsStore());
-const skills = skillsList.value;
 </script>
 
 <template>
@@ -15,7 +16,7 @@ const skills = skillsList.value;
 
     <v-row class="columns-container justify-md-space-between no-gutters">
       <v-col
-        v-for="(skill, index) in skills"
+        v-for="(skill, index) in skillsList"
         :key="index"
         class="column my-xs-3"
         :cols="3"

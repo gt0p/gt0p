@@ -32,47 +32,43 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
 
     <v-row class="page-container" no-gutters justify="center">
       <!-- hero section -->
-      <v-col cols="12" class="section pa-0 mx-0">
-        <v-container class="hero-container ma-0 pa-0" fill-height>
-          <v-row no-gutters justify="center" align="center">
-            <v-col cols="auto" align-self="center">
-              <p class="text-center text-h5 text-sm-h5 text-md-h4">
-                What You will
-                <mark class="text-white bg-primary">Read</mark>
-                is What You Get
-              </p>
-            </v-col>
-          </v-row>
-        </v-container>
+      <v-col
+        cols="12"
+        class="section hero-container pa-0 mx-0 d-flex align-center justify-center"
+      >
+        <h1 class="text-center text-h5 text-sm-h5 text-md-h4">
+          What You will
+          <mark class="text-white bg-primary">Read</mark>
+          is What You Get
+        </h1>
       </v-col>
 
       <!-- about me section -->
-      <v-col cols="12" class="section px-0 mb-16 mx-0">
-        <v-container class="about-me-container" fluid full-width>
-          <v-row full-width justify="center" align="center">
-            <v-col cols="12" md="10" lg="9" class="px-0">
-              <p
-                v-for="(paragraph, i) in aboutMe"
-                :key="i"
-                class="text-left text-body-1 mb-6"
-                white
-              >
-                {{ paragraph }}
-              </p>
+      <v-col
+        cols="12"
+        md="10"
+        lg="9"
+        class="section about-me-container px-0 mb-16 mx-0"
+      >
+        <p
+          v-for="(paragraph, i) in aboutMe"
+          :key="i"
+          class="text-left text-body-1 mb-6"
+          white
+        >
+          {{ paragraph }}
+        </p>
 
-              <h4 class="mt-8 text-left">
-                A look at my tech stack:
-                <a
-                  href="https://stackshare.io/gforerasmus/my-stack#stack"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-secondary"
-                  >My page on StackShare</a
-                >
-              </h4>
-            </v-col>
-          </v-row>
-        </v-container>
+        <h4 class="mt-8 text-left">
+          A look at my tech stack:
+          <a
+            href="https://stackshare.io/gforerasmus/my-stack#stack"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-secondary"
+            >My page on StackShare</a
+          >
+        </h4>
       </v-col>
 
       <!-- timeline section -->
@@ -91,9 +87,5 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
 <style scoped>
 .hero-container {
   height: 70vh;
-}
-
-.hero-container .v-row {
-  height: 100%;
 }
 </style>

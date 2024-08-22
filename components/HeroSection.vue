@@ -14,7 +14,7 @@ const headline = {
     <v-row no-gutters>
       <v-col class="px-0" cols="12" align-self="center">
         <h1
-          class="headline text-h5 text-md-h5 text-lg-h4 font-weight-regular"
+          class="headline text-h5 text-md-h4 text-lg-h4 font-weight-regular"
           data-testid="headline-1"
         >
           {{ headline.pre }}

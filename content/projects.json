@@ -34,6 +34,16 @@
     "buildingToolsIds": ["typescript", "electron", "vuejs", "vite", "vuetify"]
   },
   {
+    "src": "",
+    "title": "Hacker News Proxy API",
+    "imageDescription": "",
+    "description": "Implementation of a small proxy for the Hacker-News service. This proxy service offers an API to retrieve and manage list of stories from the hacker news storage.",
+    "demo": "",
+    "code": "https://github.com/gtopsis/hacker-news-proxy-api",
+    "buildingToolsIds": ["openapi", "nodejs", "express", "mongoDB", "typescript"]
+  },
+
+  {
     "src": "/images/website-cs352-showcase.webp",
     "imageDescription": "A browser window which contains a part of the website of the course cs352. This part is the the logo, navigation bar and some basic info of the course.",
     "title": "Website for course cs-352",

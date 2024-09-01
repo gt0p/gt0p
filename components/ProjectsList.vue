@@ -42,6 +42,7 @@ function navigateToProjectAsset(url: string) {
       >
         <v-card class="mx-auto mb-3" max-width="400">
           <nuxt-picture
+            v-if="project.src"
             :img-attrs="{ style: 'display:block; width:100%' }"
             :src="project.src"
             :alt="project.imageDescription"

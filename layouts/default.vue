@@ -18,6 +18,16 @@ onMounted(() => {
 
 <template>
   <v-app>
+    <v-fab
+      app
+      icon
+      location="top end"
+      class="mt-16 hidden-md-and-up"
+      size="small"
+    >
+      <TheThemeToggle />
+    </v-fab>
+
     <v-app-bar
       class="px-3"
       color="background"
@@ -25,13 +35,16 @@ onMounted(() => {
       app
       scroll-behavior="elevate"
     >
-      <v-toolbar class="d-flex flex-row justify-center" color="background">
-        <v-toolbar-items class="d-flex align-center justify-center mx-auto">
-          <nav class="mr-0" role="navigation" aria-label="Primary">
+      <v-toolbar color="background">
+        <v-toolbar-items class="mx-auto align-center">
+          <nav
+            class="mr-0 w-full d-flex align-center justify-center"
+            role="navigation"
+            aria-label="Primary"
+          >
             <v-list
-              class="nav d-inline-flex flex-row justify-end"
+              class="nav w-full d-inline-flex flex-row justify-space-between text-center"
               nav
-              align="center"
             >
               <v-list-item class="nav-item mb-0" role="option">
                 <nuxt-link
@@ -42,11 +55,13 @@ onMounted(() => {
                 </nuxt-link>
               </v-list-item>
 
-              <v-list-item
-                class="logo mx-2 text-h6 text-md-h5 text-wrap"
-                role="option"
-              >
-                <nuxt-link :to="{ name: 'index' }"> {{ title }} </nuxt-link>
+              <v-list-item class="logo mx-2 text-wrap" role="option">
+                <nuxt-link
+                  :to="{ name: 'index' }"
+                  class="text-body-1 text-md-h5"
+                >
+                  {{ title }}
+                </nuxt-link>
               </v-list-item>
 
               <v-list-item class="nav-item mb-0 ml-1" role="option">
@@ -60,13 +75,13 @@ onMounted(() => {
             </v-list>
           </nav>
 
-          <TheThemeToggle class="ml-1" />
+          <TheThemeToggle class="ml-1 hidden-sm-and-down" />
         </v-toolbar-items>
       </v-toolbar>
     </v-app-bar>
 
     <v-main role="main">
-      <v-container fluid fill-height pa-0>
+      <v-container class="relative" fluid fill-height pa-0>
         <slot />
       </v-container>
     </v-main>
@@ -74,13 +89,16 @@ onMounted(() => {
     <v-footer role="contentinfo" class="mt-16">
       <TheFooter />
     </v-footer>
+
+    <div class="hidden-md-and-up top-0 bottom-3 position-fixed">
+      <TheThemeToggle />
+    </div>
   </v-app>
 </template>
 
 <style scoped>
 .logo {
   min-width: 0px;
-  width: 200px !important;
 }
 
 .logo a {
@@ -101,6 +119,7 @@ onMounted(() => {
 }
 
 .nav {
+  min-width: 336px;
   list-style-type: none;
   padding: 0;
   background: transparent !important;

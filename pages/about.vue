@@ -36,7 +36,7 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
         cols="12"
         class="section hero-container pa-0 mx-0 d-flex align-center justify-center"
       >
-        <h1 class="text-center text-h5 text-sm-h5 text-md-h4">
+        <h1 class="text-center text-h5 text-md-h4 text-wrap">
           What You will
           <mark class="text-white bg-primary">Read</mark>
           is What You Get

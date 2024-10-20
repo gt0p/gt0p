@@ -25,7 +25,7 @@ const headline = {
         </h1>
 
         <h1
-          class="headline text-h5 text-md-h5 text-lg-h4 font-weight-regular"
+          class="headline text-h5 text-lg-h4 font-weight-regular"
           data-testid="headline-2"
         >
           {{ headline.post }}

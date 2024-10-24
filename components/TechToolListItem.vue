@@ -9,7 +9,7 @@ const iconSizePx = 28;
 const iconSrc = computed(() => `/tech_logos/${props.tool.icon}`);
 const altText = computed(() => `Logo of tool ${props.tool.name}`);
 
-const tooltipId = ref(`tooltip-${props.tool.name?.trim()}`);
+const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
 </script>
 
 <template>

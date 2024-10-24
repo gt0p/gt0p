@@ -21,7 +21,7 @@ function navigateToProjectAsset(url: string) {
       </v-col>
 
       <v-col class="mb-8 text-center">
-        <h4>
+        <h2>
           <a
             href="http://github.com/gtopsis"
             target="_blank"
@@ -29,7 +29,7 @@ function navigateToProjectAsset(url: string) {
             class="text-secondary"
             >See all projects</a
           >
-        </h4>
+        </h2>
       </v-col>
     </v-row>
 

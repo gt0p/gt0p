@@ -86,10 +86,6 @@ onMounted(() => {
     <v-footer role="contentinfo" class="mt-16">
       <TheFooter />
     </v-footer>
-
-    <div class="hidden-md-and-up top-0 bottom-3 position-fixed">
-      <TheThemeToggle />
-    </div>
   </v-app>
 </template>
 

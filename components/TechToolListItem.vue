@@ -16,7 +16,6 @@ const altText = computed(() => `Logo of tool ${props.tool.name}`);
   <v-tooltip :text="tool.name" location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
-        v-bind="tooltipProps"
         :src="iconSrc"
         fit="fill"
         :width="iconSizePx"

@@ -9,24 +9,28 @@ const iconSizePx = 28;
 const iconSrc = computed(() => `/tech_logos/${props.tool.icon}`);
 const altText = computed(() => `Logo of tool ${props.tool.name}`);
 
-const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
+const tooltipId = `tooltip${props.tool.name?.split(" ").join()}`;
 </script>
 
 <template>
-  <v-tooltip :id="tooltipId" location="top" small>
+  <v-tooltip :text="tool.name" location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
-        :src="iconSrc"
         v-bind="tooltipProps"
+        :src="iconSrc"
         fit="fill"
         :width="iconSizePx"
         :height="iconSizePx"
         :alt="altText"
+        :aria-describedby="tooltipId"
       />
-
-      <span :id="tooltipId">{{ tool.name }}</span>
     </template>
   </v-tooltip>
+
+  <!-- The following dummy span is used for accessibility reasons -->
+  <span :id="tooltipId" class="d-none">
+    {{ tool.name }}
+  </span>
 </template>
 
 <style scoped>

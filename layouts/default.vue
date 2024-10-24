@@ -24,8 +24,9 @@ onMounted(() => {
       location="top end"
       class="mt-16 hidden-md-and-up"
       size="small"
+      aria-labelledby="toggleThemeMobileButton"
     >
-      <TheThemeToggle />
+      <TheThemeToggle id="toggleThemeMobileButton" />
     </v-fab>
 
     <v-app-bar

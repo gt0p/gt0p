@@ -13,7 +13,7 @@ const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
 </script>
 
 <template>
-  <v-tooltip location="top" small>
+  <v-tooltip :aria-labelledby="tooltipId" location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
         v-bind="tooltipProps"
@@ -25,7 +25,7 @@ const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
       />
     </template>
 
-    <span> {{ tool.name }} </span>
+    <span :id="tooltipId"> {{ tool.name }} </span>
   </v-tooltip>
 </template>
 

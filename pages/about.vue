@@ -59,7 +59,7 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
           {{ paragraph }}
         </p>
 
-        <h4 class="mt-8 text-left">
+        <span class="mt-8 text-left">
           A look at my tech stack:
           <a
             href="https://stackshare.io/gforerasmus/my-stack#stack"
@@ -68,7 +68,7 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
             class="text-secondary"
             >My page on StackShare</a
           >
-        </h4>
+        </span>
       </v-col>
 
       <!-- timeline section -->

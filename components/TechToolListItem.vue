@@ -8,10 +8,12 @@ const props = defineProps<{
 const iconSizePx = 28;
 const iconSrc = computed(() => `/tech_logos/${props.tool.icon}`);
 const altText = computed(() => `Logo of tool ${props.tool.name}`);
+
+const tooltipId = ref(`tooltip-${props.tool.name?.trim()}`);
 </script>
 
 <template>
-  <v-tooltip location="top" small aria-labelledby="skillTooltipText">
+  <v-tooltip :id="tooltipId" location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
         v-bind="tooltipProps"
@@ -20,6 +22,7 @@ const altText = computed(() => `Logo of tool ${props.tool.name}`);
         :width="iconSizePx"
         :height="iconSizePx"
         :alt="altText"
+        :aria-labelledby="tooltipId"
       />
     </template>
 

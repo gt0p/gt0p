@@ -15,7 +15,6 @@ const props = defineProps({
 });
 
 const avatarSize = mobile.value ? 38 : 44;
-const getTooltipId = (text: string) => `tooltip${text.split(" ").join()}`;
 
 const truncateLines = props.content === "education" ? "start" : "both";
 const timelineTitle = computed(() => {
@@ -39,6 +38,9 @@ const timelineItems = computed(() => {
 
   return [];
 });
+
+// TODO: improve intelligence of the retrieval by passing the whole item
+const getTooltipId = (text: string) => `tooltip${text.split(" ").join()}`;
 
 function getDatePeriod({ start, end }: { start: string; end: string }) {
   const s = dayjs(start);
@@ -116,7 +118,7 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
 
               <!-- The following dummy span is used for accessibility reasons -->
               <span :id="getTooltipId(item.avatar.label.text)" class="d-none">
-                getTooltipId(item.avatar.label.text)
+                {{ getTooltipId(item.avatar.label.text) }}
               </span>
             </template>
 

@@ -13,7 +13,7 @@ const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
 </script>
 
 <template>
-  <v-tooltip :id="tooltipId" :text="tool.name" location="top" small>
+  <v-tooltip :id="tooltipId" location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
         :src="iconSrc"
@@ -23,6 +23,8 @@ const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
         :height="iconSizePx"
         :alt="altText"
       />
+
+      <span :id="tooltipId">{{ tool.name }}</span>
     </template>
   </v-tooltip>
 </template>

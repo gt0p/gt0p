@@ -13,11 +13,10 @@ const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
 </script>
 
 <template>
-  <v-tooltip :aria-labelledby="tooltipId" location="top" small>
+  <v-tooltip location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
         v-bind="tooltipProps"
-        :id="tooltipId"
         :src="iconSrc"
         fit="fill"
         :width="iconSizePx"

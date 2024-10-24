@@ -2,8 +2,10 @@
 import dayjs from "dayjs";
 import { useStudiesStore } from "~~/stores/education.js";
 import { useJobsStore } from "~~/stores/experience.js";
+import { useDisplay } from "vuetify";
 
-const avatarSize = 44;
+const { mobile } = useDisplay();
+
 const props = defineProps({
   content: {
     type: String,
@@ -11,6 +13,9 @@ const props = defineProps({
     validator: (v: string) => ["experience", "education"].includes(v),
   },
 });
+
+const avatarSize = mobile.value ? 38 : 44;
+const getTooltipId = (text: string) => `tooltip${text.split(" ").join()}`;
 
 const truncateLines = props.content === "education" ? "start" : "both";
 const timelineTitle = computed(() => {
@@ -73,7 +78,7 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
     </v-row>
 
     <v-row no-gutters>
-      <v-col cols="12" class="px-0">
+      <v-col cols="12" class="px-0 overflow-x-auto">
         <v-timeline
           align="center"
           direction="vertical"
@@ -89,10 +94,7 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
             style="align-self: flex-start"
           >
             <template #icon>
-              <v-tooltip
-                location="bottom"
-                aria-labelledby="timelineItemTooltipText"
-              >
+              <v-tooltip :text="item.avatar.alt" location="bottom">
                 <template #activator="{ props: tooltipProps }">
                   <v-avatar
                     :size="avatarSize"
@@ -105,13 +107,17 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
                       fit="fill"
                       width="30"
                       height="30"
+                      :aria-describedby="getTooltipId(item.avatar.label.text)"
                     >
                     </nuxt-img>
                   </v-avatar>
                 </template>
-
-                <span id="timelineItemTooltipText">{{ item.avatar.alt }}</span>
               </v-tooltip>
+
+              <!-- The following dummy span is used for accessibility reasons -->
+              <span :id="getTooltipId(item.avatar.label.text)" class="d-none">
+                getTooltipId(item.avatar.label.text)
+              </span>
             </template>
 
             <v-card class="timeline-item-card">

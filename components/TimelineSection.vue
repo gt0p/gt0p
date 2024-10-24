@@ -4,6 +4,16 @@ import { useStudiesStore } from "~~/stores/education.js";
 import { useJobsStore } from "~~/stores/experience.js";
 import { useDisplay } from "vuetify";
 
+interface AvatarDetails {
+  img: string;
+  alt: string;
+  bgColor: string;
+  label: {
+    text: string;
+    link: string;
+  };
+}
+
 const { mobile } = useDisplay();
 
 const props = defineProps({
@@ -40,7 +50,8 @@ const timelineItems = computed(() => {
 });
 
 // TODO: improve intelligence of the retrieval by passing the whole item
-const getTooltipId = (text: string) => `tooltip${text.split(" ").join()}`;
+const getTooltipIdOfAvatar = (avatar: AvatarDetails) =>
+  `tooltip${avatar.label.text.split(" ").join()}`;
 
 function getDatePeriod({ start, end }: { start: string; end: string }) {
   const s = dayjs(start);
@@ -102,6 +113,7 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
                     :size="avatarSize"
                     class="timeline-avatar"
                     v-bind="tooltipProps"
+                    :aria-describedby="getTooltipIdOfAvatar(item.avatar)"
                   >
                     <nuxt-img
                       :src="item.avatar.img"
@@ -109,7 +121,6 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
                       fit="fill"
                       width="30"
                       height="30"
-                      :aria-describedby="getTooltipId(item.avatar.label.text)"
                     >
                     </nuxt-img>
                   </v-avatar>
@@ -117,8 +128,8 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
               </v-tooltip>
 
               <!-- The following dummy span is used for accessibility reasons -->
-              <span :id="getTooltipId(item.avatar.label.text)" class="d-none">
-                {{ getTooltipId(item.avatar.label.text) }}
+              <span :id="getTooltipIdOfAvatar(item.avatar)" class="d-none">
+                {{ item.avatar.alt }}
               </span>
             </template>
 

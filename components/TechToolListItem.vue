@@ -9,11 +9,11 @@ const iconSizePx = 28;
 const iconSrc = computed(() => `/tech_logos/${props.tool.icon}`);
 const altText = computed(() => `Logo of tool ${props.tool.name}`);
 
-// const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
+const tooltipId = ref(`tooltip-${props.tool.name?.split(" ").join()}`);
 </script>
 
 <template>
-  <v-tooltip :text="tool.name" location="top" small>
+  <v-tooltip :id="tooltipId" :text="tool.name" location="top" small>
     <template #activator="{ props: tooltipProps }">
       <NuxtImg
         :src="iconSrc"

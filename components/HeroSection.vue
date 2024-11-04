@@ -3,7 +3,8 @@ const headline = {
   pre: "I'm ",
   name: {
     text: "Giorgos",
-    pronunciation: "(/ɡi.ɔ̌ːr.ɡ.os/)",
+    // pronunciation: "(/ɡi.ɔ̌ːr.ɡ.os/)",
+    phoneticTranscription: "/ˈjɔr.ɡos/",
   },
   post: "a Full-Stack Web Developer based in Heraklion of Crete.",
 };
@@ -14,18 +15,18 @@ const headline = {
     <v-row no-gutters>
       <v-col class="px-0" cols="12" align-self="center">
         <h1
-          class="headline text-h5 text-md-h4 text-lg-h4 font-weight-regular"
+          class="headline text-h5 text-md-h4 text-lg-h4 font-weight-regular text-no-wrap"
           data-testid="headline-1"
         >
           {{ headline.pre }}
           <nuxt-link :to="{ name: 'about' }" class="first-name text-secondary">
             {{ headline.name.text }}
           </nuxt-link>
-          {{ headline.name.pronunciation }},
+          {{ headline.name.phoneticTranscription }},
         </h1>
 
         <h1
-          class="headline text-h5 text-lg-h4 font-weight-regular"
+          class="headline text-h5 text-lg-h4 font-weight-regular text-no-wrap"
           data-testid="headline-2"
         >
           {{ headline.post }}

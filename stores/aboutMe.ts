@@ -9,7 +9,12 @@ export const useAboutMeStore = defineStore("AboutMeStore", () => {
   const personal2 =
     "When I'm away from the keyboard, I like joining local meetups (DevStaff, Open Coffee Heraklion) as well as dance communities, learning and dancing mostly Argentinian Tango and Lindy Hop.";
 
-  const aboutMe = reactive([intro, workExperience, personal1, personal2]);
+  const aboutMe = reactive([
+    { order: 1, text: intro },
+    { order: 2, text: workExperience },
+    { order: 3, text: personal1 },
+    { order: 4, text: personal2 },
+  ]);
 
   return { aboutMe };
 });

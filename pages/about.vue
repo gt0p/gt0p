@@ -51,12 +51,12 @@ const { aboutMe } = storeToRefs(useAboutMeStore());
         class="section about-me-container px-0 mb-16 mx-0"
       >
         <p
-          v-for="(paragraph, i) in aboutMe"
-          :key="i"
+          v-for="paragraph in aboutMe"
+          :key="paragraph.order"
           class="text-left text-body-1 mb-6"
           white
         >
-          {{ paragraph }}
+          {{ paragraph.text }}
         </p>
 
         <span class="mt-8 text-left">

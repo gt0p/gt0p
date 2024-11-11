@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTheme } from "vuetify";
 
+const title = "Giorgos Topsis";
+
 const theme = useTheme();
 const themesNames = ["customLight", "customDark"];
 
@@ -15,38 +17,46 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-app>
-    <v-fab
-      app
-      icon
-      location="top end"
-      class="mt-16 hidden-md-and-up"
-      size="small"
-      aria-labelledby="toggleThemeMobileButton"
-    >
-      <TheThemeToggle id="toggleThemeMobileButton" />
-    </v-fab>
+  <v-toolbar color="background">
+    <v-toolbar-items class="mx-auto align-center">
+      <nav
+        class="mr-0 w-full d-flex align-center justify-center"
+        role="navigation"
+        aria-label="Primary"
+      >
+        <v-list
+          class="nav w-full d-inline-flex flex-row justify-space-between text-center"
+          nav
+        >
+          <v-list-item class="nav-item mb-0 mr-1" role="option">
+            <nuxt-link
+              :to="{ name: 'index' }"
+              class="text-subtitle-1 text-secondary"
+            >
+              Projects
+            </nuxt-link>
+          </v-list-item>
 
-    <v-app-bar
-      class="px-3"
-      color="background"
-      fixed
-      app
-      scroll-behavior="elevate"
-    >
-      <TheTopBar />
-    </v-app-bar>
+          <v-list-item class="logo mx-2 text-wrap" role="option">
+            <span class="text-md-h5 font-weight-semibold">
+              {{ title }}
+            </span>
+          </v-list-item>
 
-    <v-main role="main">
-      <v-container class="relative" fluid fill-height pa-0>
-        <slot />
-      </v-container>
-    </v-main>
+          <v-list-item class="nav-item mb-0 ml-1" role="option">
+            <nuxt-link
+              :to="{ name: 'about' }"
+              class="text-subtitle-1 text-secondary"
+            >
+              About
+            </nuxt-link>
+          </v-list-item>
+        </v-list>
+      </nav>
 
-    <v-footer role="contentinfo" class="mt-16">
-      <TheFooter />
-    </v-footer>
-  </v-app>
+      <TheThemeToggle class="ml-1 hidden-sm-and-down" />
+    </v-toolbar-items>
+  </v-toolbar>
 </template>
 
 <style scoped>

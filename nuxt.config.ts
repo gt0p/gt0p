@@ -145,6 +145,7 @@ export default defineNuxtConfig({
     "@/assets/global.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
+
   build: {
     transpile: [
       "vuetify",
@@ -154,12 +155,15 @@ export default defineNuxtConfig({
       "@fortawesome/free-brands-svg-icons",
     ],
   },
+
   imports: {
     dirs: ["stores"],
   },
+
   alias: {
     pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
   },
+
   typescript: {
     typeCheck: {
       eslint: {
@@ -181,11 +185,13 @@ export default defineNuxtConfig({
     display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
     prefetch: true,
   },
+
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
     treeShake: true,
     defaultAssets: false,
   },
+
   $production: {
     routeRules: {
       "/img/**": {
@@ -196,4 +202,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: "2024-10-16",
 });

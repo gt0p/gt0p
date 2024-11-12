@@ -5,7 +5,7 @@ const headline = {
     text: "Giorgos",
     phoneticTranscription: "/ˈjɔr.ɡos/",
   },
-  post: "a Full-Stack Web Developer based in Heraklion of Crete.",
+  post: "a Full-Stack Web Engineer based in Heraklion of Crete.",
 };
 </script>
 
@@ -16,7 +16,7 @@ const headline = {
         <h1 class="headline text-h5 text-md-h4 font-weight-regular text-break">
           <span class="d-block" data-testid="headline-1">
             {{ headline.pre }}
-            
+
             <nuxt-link
               :to="{ name: 'about' }"
               class="first-name text-secondary"

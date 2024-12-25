@@ -4,7 +4,7 @@ import js from "@eslint/js";
 import eslintPluginVue from "eslint-plugin-vue";
 import ts from "typescript-eslint";
 
-import vitest from "eslint-plugin-vitest";
+import vitest from "@vitest/eslint-plugin";
 import pluginVueA11y from "eslint-plugin-vuejs-accessibility";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
@@ -44,22 +44,12 @@ export default ts.config(
   },
 
   {
-    files: ["tests/**"], // or any other pattern
+    files: ["**/*.test.ts"],
     plugins: {
       vitest,
     },
     rules: {
       ...vitest.configs.recommended.rules,
-    },
-    settings: {
-      vitest: {
-        typecheck: true,
-      },
-    },
-    languageOptions: {
-      globals: {
-        ...vitest.environments.env.globals,
-      },
     },
   },
 

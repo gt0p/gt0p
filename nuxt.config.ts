@@ -128,15 +128,11 @@ export default defineNuxtConfig({
   modules: [
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
-    [
-      "@pinia/nuxt",
-      {
-        autoImports: ["defineStore", "acceptHMRUpdate", "storeToRefs"],
-      },
-    ],
-    "@nuxtjs/google-fonts", // "nuxt-purgecss",
+// "nuxt-purgecss",
+    "@nuxtjs/google-fonts",
     "@nuxt/image-edge",
     "@nuxt/image",
+    "@pinia/nuxt",
   ],
 
   css: [
@@ -160,9 +156,6 @@ export default defineNuxtConfig({
     dirs: ["stores"],
   },
 
-  alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
-  },
 
   typescript: {
     typeCheck: {

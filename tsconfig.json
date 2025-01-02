@@ -3,6 +3,7 @@
   "extends": "./.nuxt/tsconfig.json",
   "exclude": ["node_modules/*"],
   "compilerOptions": {
-    "types": ["@nuxt/image"]
+    "types": ["@nuxt/image"],
+    "incremental": true
   }
 }

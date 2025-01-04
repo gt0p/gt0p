@@ -4,6 +4,9 @@
   "exclude": ["node_modules/*"],
   "compilerOptions": {
     "types": ["@nuxt/image"],
-    "incremental": true
+    "incremental": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
   }
 }

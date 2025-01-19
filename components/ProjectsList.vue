@@ -5,7 +5,7 @@ import TechToolList from "./TechToolList.vue";
 const title = "Personal Projects";
 const { projectsList } = storeToRefs(useProjectsStore());
 const visibleProjects = computed(() =>
-  projectsList.value.filter(({ visible }) => visible !== false)
+  projectsList.value.filter(({ visible }) => visible !== false),
 );
 
 function navigateToProjectAsset(url: string) {
@@ -71,7 +71,13 @@ function navigateToProjectAsset(url: string) {
               color="secondary"
               @click="navigateToProjectAsset(project.demo)"
             >
-              Demo
+              <font-awesome-icon
+                class="text-secondary"
+                :icon="['fas', 'arrow-up-right-from-square']"
+                size="lg"
+                aria-hidden="true"
+              />
+              <span class="ml-1"> Demo </span>
             </v-btn>
 
             <v-btn
@@ -79,7 +85,13 @@ function navigateToProjectAsset(url: string) {
               color="secondary"
               @click="navigateToProjectAsset(project.code)"
             >
-              Code
+              <font-awesome-icon
+                class="text-secondary"
+                :icon="['fa-brands', 'fa-github']"
+                size="lg"
+                aria-hidden="true"
+              />
+              <span class="ml-1"> Code </span>
             </v-btn>
           </v-card-actions>
         </v-card>

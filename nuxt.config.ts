@@ -128,7 +128,7 @@ export default defineNuxtConfig({
   modules: [
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
-// "nuxt-purgecss",
+    // "nuxt-purgecss",
     "@nuxtjs/google-fonts",
     "@nuxt/image-edge",
     "@nuxt/image",
@@ -155,7 +155,6 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["stores"],
   },
-
 
   typescript: {
     typeCheck: {

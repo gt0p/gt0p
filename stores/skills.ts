@@ -117,6 +117,6 @@ export const useSkillsStore = defineStore("SkillsStore", () => {
   return { skillsList };
 });
 
-if(import.meta.hot) {
+if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useSkillsStore, import.meta.hot));
 }

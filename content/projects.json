@@ -40,7 +40,14 @@
     "description": "Implementation of a small proxy for the Hacker-News service. This proxy service offers an API to retrieve and manage list of stories from the hacker news storage.",
     "demo": "",
     "code": "https://github.com/gtopsis/hacker-news-proxy-api",
-    "buildingToolsIds": ["openapi", "nodejs", "express", "mongoDB", "typescript", "docker"]
+    "buildingToolsIds": [
+      "openapi",
+      "nodejs",
+      "express",
+      "mongoDB",
+      "typescript",
+      "docker"
+    ]
   },
 
   {
@@ -69,7 +76,13 @@
     "description": "The backend side of a music app in which albums, artists and tracks are associated properly.",
     "demo": "",
     "code": "https://github.com/gtopsis/music-app",
-    "buildingToolsIds": ["openapi", "nodejs", "express", "postgresql", "typescript"]
+    "buildingToolsIds": [
+      "openapi",
+      "nodejs",
+      "express",
+      "postgresql",
+      "typescript"
+    ]
   },
   {
     "src": "/images/website-uoc-radio-showcase.webp",

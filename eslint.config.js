@@ -8,6 +8,8 @@ import vitest from "@vitest/eslint-plugin";
 import pluginVueA11y from "eslint-plugin-vuejs-accessibility";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
+import pluginSecurity from "eslint-plugin-security";
+
 export default ts.config(
   {
     languageOptions: {
@@ -21,6 +23,7 @@ export default ts.config(
 
   js.configs.recommended,
   ...ts.configs.recommended,
+  pluginSecurity.configs.recommended,
   ...eslintPluginVue.configs["flat/recommended"],
   {
     files: ["*.vue", "**/*.vue"],

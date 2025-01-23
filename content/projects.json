@@ -6,7 +6,7 @@
     "description": "A web app to showcase, in a more intuitive way, the list of jobs that are available from Startup-Pirate guy.",
     "demo": "https://gtopsis.github.io/pirate-thief/",
     "code": "https://github.com/gtopsis/pirate-thief",
-    "buildingToolsIds": ["typescript", "nuxtjs", "vuejs", "vite", "tailwindCSS", "docker"]
+    "buildingToolsIds": ["typescript", "nuxtjs", "vuejs", "vite", "tailwindCSS"]
   },
   {
     "src": "/images/brokery-showcase.webp",
@@ -40,7 +40,7 @@
     "description": "Implementation of a small proxy for the Hacker-News service. This proxy service offers an API to retrieve and manage list of stories from the hacker news storage.",
     "demo": "",
     "code": "https://github.com/gtopsis/hacker-news-proxy-api",
-    "buildingToolsIds": ["openapi", "nodejs", "express", "mongoDB", "typescript"]
+    "buildingToolsIds": ["openapi", "nodejs", "express", "mongoDB", "typescript", "docker"]
   },
 
   {

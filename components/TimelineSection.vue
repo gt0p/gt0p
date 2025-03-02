@@ -115,14 +115,20 @@ function getDatePeriod({ start, end }: { start: string; end: string }) {
                     v-bind="tooltipProps"
                     :aria-describedby="getTooltipIdOfAvatar(item.avatar)"
                   >
-                    <nuxt-img
+                    <v-img
                       :src="item.avatar.img"
                       :alt="item.avatar.alt"
                       fit="fill"
                       width="30"
                       height="30"
-                    >
-                    </nuxt-img>
+                    />
+                    <!-- <nuxt-img
+                      :src="item.avatar.img"
+                      :alt="item.avatar.alt"
+                      fit="fill"
+                      width="30"
+                      height="30"
+                    /> -->
                   </v-avatar>
                 </template>
               </v-tooltip>

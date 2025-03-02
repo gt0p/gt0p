@@ -41,7 +41,7 @@ function navigateToProjectAsset(url: string) {
         md="4"
       >
         <v-card class="mx-auto mb-3" max-width="400">
-          <nuxt-picture
+          <v-img
             v-if="project.src"
             :img-attrs="{ style: 'display:block; width:100%' }"
             :src="project.src"
@@ -50,7 +50,17 @@ function navigateToProjectAsset(url: string) {
             loading="lazy"
             fit="cover"
             sizes="xs:400px sm:450px md:350px lg:350px xl:400px"
-          />
+          ></v-img>
+          <!-- <nuxt-image
+            v-if="project.src"
+            :img-attrs="{ style: 'display:block; width:100%' }"
+            :src="project.src"
+            :alt="project.imageDescription"
+            placeholder
+            loading="lazy"
+            fit="cover"
+            sizes="xs:400px sm:450px md:350px lg:350px xl:400px"
+          /> -->
 
           <v-card-title :title="project.title">
             <strong> {{ project.title }} </strong>

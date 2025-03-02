@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useMeetupsStore } from "../stores/meetups";
 
-const title = "Where to find me";
+const title = "Join Me Here";
 
 const { meetupsList } = storeToRefs(useMeetupsStore());
 </script>

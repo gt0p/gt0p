@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from "nuxt/config";
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
 const websitePreviewImage = "/images/website-preview.webp";
 
@@ -130,10 +131,24 @@ export default defineNuxtConfig({
     // '@nuxtjs/axios',
     // "nuxt-purgecss",
     "@nuxtjs/google-fonts",
-    "@nuxt/image-edge",
-    // "@nuxt/image",
+    // "@nuxt/image-edge",
+    "@nuxt/image",
     "@pinia/nuxt",
+    (_options, nuxt) => {
+      nuxt.hooks.hook("vite:extendConfig", (config) => {
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }));
+      });
+    },
   ],
+
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
+    },
+  },
 
   css: [
     "vuetify/styles",

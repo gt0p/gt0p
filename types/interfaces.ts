@@ -9,11 +9,11 @@ export interface IProject {
   visible?: boolean;
 }
 
-export interface IMeetup {
-  src: string;
+export interface IContactItem {
+  icon?: string[];
   title: string;
-  link: string;
-  description: string;
+  url: string;
+  description?: string;
 }
 
 interface ITechnology {

@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import type { IMeetup } from "~/types/interfaces";
+import type { IContactItem } from "~/types/interfaces";
 
-defineProps<{ meetup: IMeetup }>();
+defineProps<{ meetup: IContactItem }>();
 </script>
 
 <template>
   <v-card
     class="mx-auto"
-    :href="meetup.link"
+    :href="meetup.url"
     max-width="90%"
     rel="noopener"
     :subtitle="meetup.description"

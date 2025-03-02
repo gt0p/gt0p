@@ -1,9 +1,9 @@
 import meetups from "@/content/meetups.json";
-import type { IMeetup } from "~/types/interfaces";
+import type { IContactItem } from "~/types/interfaces";
 
 export const useMeetupsStore = defineStore("MeetupsStore", () => {
-  const meetupsList: ComputedRef<IMeetup[]> = computed(
-    (): IMeetup[] => meetups,
+  const meetupsList: ComputedRef<IContactItem[]> = computed(
+    (): IContactItem[] => meetups,
   );
 
   return { meetupsList };

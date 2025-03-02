@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useMeetupsStore } from "../stores/meetups";
 
-const title = "Participation on several Meetups";
+const title = "Where to find me";
 
 const { meetupsList } = storeToRefs(useMeetupsStore());
 </script>
@@ -15,9 +15,7 @@ const { meetupsList } = storeToRefs(useMeetupsStore());
     </v-row>
 
     <v-row dense justify="center">
-      <v-col v-for="meetup in meetupsList" :key="meetup.title" cols="12">
-        <MeetupListItem :meetup="meetup" />
-      </v-col>
+      <SocialsAndMeetups :meetups="meetupsList" />
     </v-row>
   </v-container>
 </template>

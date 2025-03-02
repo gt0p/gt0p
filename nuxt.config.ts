@@ -6,7 +6,7 @@ const websitePreviewImage = "/images/website-preview.webp";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
-  ssr: true,
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   app: {

@@ -6,3 +6,4 @@ dist
 .eslintcache
 syncAndDeploy.sh
 .output
+tsconfig.tsbuildinfo

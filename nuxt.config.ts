@@ -131,13 +131,13 @@ export default defineNuxtConfig({
     // "nuxt-purgecss",
     "@nuxtjs/google-fonts",
     "@nuxt/image-edge",
-    "@nuxt/image",
+    // "@nuxt/image",
     "@pinia/nuxt",
   ],
 
   css: [
     "vuetify/styles",
-    "vuetify/lib/styles/main.sass",
+    // "vuetify/lib/styles/main.sass",
     "@/assets/global.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
@@ -147,7 +147,6 @@ export default defineNuxtConfig({
       "vuetify",
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
-      "@fortawesome/free-brands-svg-icons",
       "@fortawesome/free-brands-svg-icons",
     ],
   },
@@ -171,11 +170,11 @@ export default defineNuxtConfig({
         ital: [100],
       },
       "Josefin+Sans": true,
-      Lato: [100, 300],
-      Raleway: {
-        wght: [100, 400],
-        ital: [100],
-      },
+      // Lato: [100, 300],
+      // Raleway: {
+      //   wght: [100, 400],
+      //   ital: [100],
+      // },
     },
     display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
     prefetch: true,

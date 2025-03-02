@@ -1,19 +1,29 @@
 <script setup lang="ts">
 import type { IContactItem } from "~/types/interfaces";
 
-const props = defineProps<{
+defineProps<{
   meetups: IContactItem[];
 }>();
+
+const runtimeConfig = useRuntimeConfig();
+
+const getFullUrl = (contactItem: IContactItem) => {
+  const socialItem = socials.find(({ title }) => title === contactItem.title);
+
+  return socialItem
+    ? socialItem.url + runtimeConfig.public.SOCIAL_NETWORKS_USERNAME
+    : contactItem.url;
+};
 
 const socials: IContactItem[] = [
   {
     icon: ["fab", "linkedin"],
-    url: "https://www.linkedin.com/in/gtopsis/",
+    url: "https://www.linkedin.com/in/",
     title: "LinkedIn",
   },
   {
     icon: ["fab", "github"],
-    url: "https://github.com/gtopsis",
+    url: "https://github.com/",
     title: "GitHub",
   },
 ];
@@ -22,16 +32,16 @@ const socials: IContactItem[] = [
 <template>
   <section>
     <v-card class="pa-2 contact-card">
-      <v-card-tex>
+      <v-card-text>
         <v-row class="socials-list ma-0" justify="center">
           <v-col
-            v-for="(social, index) in [...socials, ...props.meetups]"
+            v-for="(social, index) in [...socials, ...meetups]"
             :key="index"
             cols="12"
             class="pa-1"
           >
             <a
-              :href="social.url"
+              :href="getFullUrl(social)"
               :aria-label="social.title"
               target="_blank"
               class="d-flex align-center text-decoration-none"
@@ -46,7 +56,7 @@ const socials: IContactItem[] = [
             </a>
           </v-col>
         </v-row>
-      </v-card-tex>
+      </v-card-text>
     </v-card>
   </section>
 </template>

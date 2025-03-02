@@ -212,5 +212,11 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {
+      SOCIAL_NETWORKS_USERNAME: process.env.SOCIAL_NETWORKS_USERNAME,
+    },
+  },
+
   compatibilityDate: "2024-10-16",
 });

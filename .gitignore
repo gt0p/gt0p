@@ -7,3 +7,4 @@ dist
 syncAndDeploy.sh
 .output
 tsconfig.tsbuildinfo
+.env

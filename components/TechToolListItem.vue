@@ -15,7 +15,7 @@ const tooltipId = `tooltip${props.tool.name?.split(" ").join()}`;
 <template>
   <v-tooltip :text="tool.name" location="top" small>
     <template #activator="{ props: tooltipProps }">
-      <NuxtImg
+      <v-img
         v-bind="tooltipProps"
         :src="iconSrc"
         fit="fill"
@@ -23,7 +23,7 @@ const tooltipId = `tooltip${props.tool.name?.split(" ").join()}`;
         :height="iconSizePx"
         :alt="altText"
         :aria-describedby="tooltipId"
-      />
+      ></v-img>
     </template>
   </v-tooltip>
 

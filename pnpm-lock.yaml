@@ -23,30 +23,15 @@ importers:
       '@fortawesome/vue-fontawesome':
         specifier: ^3.0.8
         version: 3.0.8(@fortawesome/fontawesome-svg-core@6.7.2)(vue@3.5.13(typescript@5.8.2))
-      '@vitest/eslint-plugin':
-        specifier: ^1.1.36
-        version: 1.1.36(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/node@22.10.2)(happy-dom@17.1.8)(jiti@2.4.2)(sass@1.85.1)(terser@5.37.0)(yaml@2.7.0))
       core-js:
         specifier: ^3.41.0
         version: 3.41.0
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
-      eslint-config-prettier:
-        specifier: ^10.0.2
-        version: 10.0.2(eslint@9.21.0(jiti@2.4.2))
-      eslint-plugin-prettier:
-        specifier: ^5.2.3
-        version: 5.2.3(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(prettier@3.5.2)
       globals:
         specifier: ^15.15.0
         version: 15.15.0
-      prettier:
-        specifier: ^3.5.2
-        version: 3.5.2
-      sass:
-        specifier: ^1.85.1
-        version: 1.85.1
     devDependencies:
       '@babel/eslint-parser':
         specifier: ^7.26.8
@@ -72,12 +57,21 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
         version: 5.2.1(vite@6.2.0(@types/node@22.10.2)(jiti@2.4.2)(sass@1.85.1)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
+      '@vitest/eslint-plugin':
+        specifier: ^1.1.36
+        version: 1.1.36(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/node@22.10.2)(happy-dom@17.1.8)(jiti@2.4.2)(sass@1.85.1)(terser@5.37.0)(yaml@2.7.0))
       '@vue/test-utils':
         specifier: ^2.4.6
         version: 2.4.6
       eslint:
         specifier: ^9.21.0
         version: 9.21.0(jiti@2.4.2)
+      eslint-config-prettier:
+        specifier: ^10.0.2
+        version: 10.0.2(eslint@9.21.0(jiti@2.4.2))
+      eslint-plugin-prettier:
+        specifier: ^5.2.3
+        version: 5.2.3(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(prettier@3.5.2)
       eslint-plugin-security:
         specifier: ^3.0.1
         version: 3.0.1
@@ -99,6 +93,12 @@ importers:
       pinia:
         specifier: ^2.3.1
         version: 2.3.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
+      prettier:
+        specifier: ^3.5.2
+        version: 3.5.2
+      sass:
+        specifier: ^1.85.1
+        version: 1.85.1
       typescript:
         specifier: ^5.8.2
         version: 5.8.2

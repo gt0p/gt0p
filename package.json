@@ -1,4 +1,15 @@
 {
+  "name": "gtopsis.github.io",
+  "description": "Personal website",
+  "author": "gtopsis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gtopsis/gtopsis.github.io"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,16 +19,13 @@
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
     "prettier:fix": "pnpx prettier . --write",
-    
     "lint:js": "eslint",
     "lint": "pnpm run lint:js && pnpm run lint:prettier",
     "lint:fix": "prettier --write --list-different . && pnpm run lint:js --fix",
     "format:check": "prettier --check .",
-    
     "test": "vitest",
     "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
-    
     "clean": "rm -rf .nuxt dist .output"
   },
   "dependencies": {
